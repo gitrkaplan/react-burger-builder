@@ -1,12 +1,13 @@
 import React from 'react'
 
-const UserOutput = props => {
+const userOutput = props => {
+  console.log(props.userName)
   return (
     <div>
-      <p>This is a placeholder</p>
-      <p>This is a second placeholder</p>
+      <p>Username: {props.userName}</p>
+      <p>This is just a placeholder</p>
     </div>
   )
 }
 
-export default UserOutput
+export default userOutput
