@@ -10,7 +10,7 @@ const char = props => {
   }
   return (
     <div style={style}>
-      <p>Test</p>
+      <p>{props.character}</p>
     </div>
   )
 }
