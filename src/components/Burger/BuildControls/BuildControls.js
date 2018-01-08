@@ -24,6 +24,7 @@ const buildControls = props => (
         label={ctrl.label}
       />
     ))}
+    <button className={classes.OrderButton}>ORDER NOW</button>
   </div>
 )
 
