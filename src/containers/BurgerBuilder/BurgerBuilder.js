@@ -38,7 +38,6 @@ class BurgerBuilder extends Component {
       .reduce((sum, el) => {
         return sum + el
       }, 0)
-    console.log(sum > 0)
     this.setState({ purchasable: sum > 0 })
   }
 
@@ -99,6 +98,7 @@ class BurgerBuilder extends Component {
             ingredients={this.state.ingredients}
             purchaseCanceled={this.purchaseCancelHandler}
             purchaseContinued={this.purchaseContinueHandler}
+            price={this.state.totalPrice}
           />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
